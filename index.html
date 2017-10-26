@@ -6,39 +6,12 @@
     </head>
     <body>
         <p><span id="game-display"></span></p>
+        <p><span id="win"></span></p>
+        <p><span id="loss"></span></p>
+        <p><span id="spaces"></span></p>
+        <p><span id="remainingGuess"></span></p>
+        <p><span id="lettersGuess"></span></p>
 
-
-
-        <script type="text/javascript">
-        // Array of Choices
-        var wordlist = [
-        "apple", "piano", "wisdom", "groom", "modern", "perspective",
-        "lemon", "melon", "lime", "taxes", "money", "five", "constitution"]
-        len = wordlist.length;
-        // Alphabet Array
-        var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-                        "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-        // HOLDING USER / COMPUTER CHOICES
-        var letterChoice;
-        var randWord;
-        // SETTING SCORE VARIABLES
-        var win = 0;
-        var lose = 0;
-        var tries = 0;
-
-        document.onkeyup = function(event) {
-            // Storing Keypress
-            var letterChoice = event.key;
-            // Logging for fun.
-            console.log(randWord);
-            console.log(userChoice);
-
-            document.getElementById("game-display").innerHTML = results;
-
-    };
-
-
-        </script>
+        <script src="assets/javascript/game.js"></script>
     </body>
 </html>
